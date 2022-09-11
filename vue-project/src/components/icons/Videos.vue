@@ -4,9 +4,6 @@
  </ul>
 </template>
 
-<script>
-
-</script>
 
 <style>
 

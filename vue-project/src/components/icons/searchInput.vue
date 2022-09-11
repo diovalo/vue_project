@@ -1,20 +1,19 @@
 <template>
-    <div>
-        <input @input="onChange" type="text" >
-    </div>
+  <div>
+    <input @input="onChange" type="text" />
+  </div>
 </template>
 
-<script>
-    export default {
-    name: 'SearchInput',
-    methods:
-    {
-        onChange: function(event) 
-        {
-            // const term = event.target.value
-            this.$emit('newTerm', event.target.value)
-        }
-    }
-}
-</script>
+<script lang="ts">
+import { defineComponent } from "vue";
 
+export default defineComponent({
+  name: "SearchInput",
+  methods: {
+    onChange: function (event) {
+      // const term = event.target.value
+      this.$emit("newTerm", (event.target as HTMLInputElement).value);
+    },
+  },
+});
+</script>

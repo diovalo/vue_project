@@ -16,6 +16,5 @@
     {
       "path": "./tsconfig.config.json"
     }
-  ], 
-  "allowJs": true,
+  ]
 }
